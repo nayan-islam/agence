@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+a{   
+    display: inline-block;
+    text-decoration: none;
+}
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+:root{
+    --main-color: #6A4DF4;
+    --white: white;
+    --black:#151515;
+    --headfontsize:50px;
+}
+
+.custombtn{
+  background-color: var(--main-color);
+  padding: 15px 42px;
+  font-size: 20px;
+  color: var(--white);
+  line-height: 26px;
+  font-weight: 600;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  transition: .2s;
+}
+.custombtn:hover{
+    background-color: transparent;
+}
+.titlep{
+    font-family: var(--main-font);
+    font-size:16px;
+    color: rgba(115, 115, 115, 1);
+    line-height: 26px;
+}
+.headertitle{
+    color:var(--black);
+    font-weight: 700;
+    font-size: var(--headfontsize);
+}
+.formlabel{
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #151515;
+    display: block;
+    margin-bottom: 10px;
+}
+.forminput{
+    width: 450px;
+    background-color: #ffffff;
+    padding: 19px 23px 19px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #E8E8E8;
+}
+/* ===============================COMMON CSS CODE============================ */
+/* ==============================NAV CSS START============================= */
+.navbar{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    margin-top: 50px;
+}
+.navbar .navbar-nav{
+    column-gap: 67px;
+}
+.navbar .navbar-nav .nav-link{
+    padding: 0;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--white);
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--main-color);
+}
+.navbar .navbar-nav .nav-link.active{
+    color: var(--main-color);
+}
+/* ==============================NAV CSS END============================= */
+/* =============================BANNER CSS START============================= */
+#bannerpart .bannerslider .slide{
+    padding: 315px 0 176px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+ }
+ #bannerpart .bannerslider .slide:after{
+    content: '';
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.62);
+    z-index: -1;
+}
+ #bannerpart .bannerslider .slide1 {
+     background:url(../images/agenc-Banner\ 1.png) no-repeat center / cover;
+ }
+ #bannerpart .bannerslider .slide2 {
+     background:url(../images/Mountain.jpg) no-repeat center / cover;
+ }
+ #bannerpart .bannerslider .slide3 {
+     background:url(../images/sunrise.jpg) no-repeat center / cover;
+ }
+ #bannerpart .bannerslider .slide h1{
+    color: var(--white);
+    font-size: 75px;
+    font-weight: 600;
+    max-width: 950px;
+    line-height: 120%;
+    margin: 0 auto;
+}
+#bannerpart .bannerslider .slide p{
+    color: var(--white);
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 600px;
+    margin: 51px auto 40px;
+}
+#bannerpart .bannerslider{
+    position: relative;
+}
+#bannerpart .bannerslider ul{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 53px;
+    display: flex;
+    column-gap: 2px;
+}
+#bannerpart .bannerslider ul li button{
+    width: 24px;
+    height: 24px;
+    background: var(--main-color);
+    border: 4px solid var(--main-color);
+    border-radius: 50%;
+    font-size: 0;
+}
+#bannerpart .bannerslider ul .slick-active button{
+    border-color: white;
+}
+/* =============================BANNER CSS END============================= */
+/* =============================SUCCESS PART START======================= */
+#successpart{
+    margin-top: 269px;
+}
+#successpart .container{
+   background-color: rgba(224, 255, 249, 1);
+   padding: 85px 37px 86px 50px;
+   border-radius: 20px;
+}
+#successpart .container p{
+   font-size: 25px;
+   font-weight: 500;
+   color: var(--main-color);
+   margin-bottom: 15px;
+}
+ #successpart .container h3{
+    font-size: 35px;
+    font-weight: 600;
+    color:var(--black);
+}
+#successpart .container span{
+    font-weight: 500;
+    color: rgba(115, 115, 115, 1);
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 20px;
+}
+/* =============================SUCCESS PART END======================= */
+/* =============================SERVICE CSS START======================= */
+#services{
+    margin-top: 149px;
+}
+#services .container .title{
+    text-align: center;
+}
+#services .container .title .titlep{
+   max-width: 590px;
+   margin: 20px auto 50px;
+}
+#services .container .maincontent{
+    text-align: center;
+    padding: 80px 49px 47px;
+    border-radius: 20px;
+}
+#services .container .maincontent:hover{
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.25);
+}
+#services .container .maincontent h3{
+   font-size: 25px;
+   color: var(--black);
+   font-weight: 700;
+   margin: 40px 0 20px;
+}
+#services .container .maincontent .titlep{
+ max-width: 300px;
+ }
+ #services .container .row{
+  row-gap: 24px;
+}
+/* =============================SERVICE CSS END======================= */
+/* =======================RECENT WORK CSS START================ */
+#recentwork{
+    margin-top: 103px;
+    background-color: #F3F3F3;
+    padding: 150px 140px;
+}
+#recentwork .container .title{
+   text-align: center;
+   margin-bottom: 106px;
+}
+#recentwork .container .title .titlep{
+    max-width: 610px;
+    margin: 20px auto 0;
+}
+#recentwork .container .work{
+    background-color: var(--white);
+    border-radius: 20px;
+    text-align: center;
+}
+#recentwork .container .work img{
+    width: 100%;
+    height: 311px;
+    object-fit: cover;
+    border-radius: 20px;
+    height: 311px;
+}
+#recentwork .container .work h4{
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--black);
+  margin-top: 30px;
+}
+#recentwork .container .work p{
+    max-width: 330px;
+    margin:10px auto 0;
+    padding-bottom: 30px;
+}
+#recentwork .container .row{
+    row-gap: 24px;
+}
+/* =======================RECENT WORK CSS END================ */
+/* ========================AGENCE CSS START================= */
+#agence{
+    margin-top: 150px;
+}
+#agence .title{
+  text-align: center;
+}
+#agence .title h3{
+    max-width: 518px;
+    margin: 0 auto;
+}
+#agence .title p{
+    width: 760px;
+    margin: 20px auto 130px;
+}
+#agence .row .main h4{
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--black);
+    margin: 20px 0 10px;
+}
+#agence .row .main p{
+   max-width: 320px;
+}
+#agence .row .main:first-child{
+    margin-bottom: 88px;
+}
+#agence .people{
+    height:100%;
+    width: 100%;
+    border-radius: 25px;
+}
+/* ========================AGENCE CSS END================= */
+/* ========================CLIENT REVIEW CSS START================ */
+#clientReview{
+    margin-top: 106px;
+}
+#clientReview .container{
+    max-width: 1344px;
+}
+#clientReview .title{
+    text-align: center;
+}
+#clientReview .title .titlep{
+    max-width: 610px;
+    margin: 20px auto 130px;
+}
+#clientReview .reviewslider{
+    position: relative;
+}
+#clientReview .reviewslider .prev{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%); 
+    width: 40px;
+    height: 40px;
+    background: var(--main-color);
+    color: var(--white);
+    z-index: 1;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+#clientReview .reviewslider .next{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%) translateX(50%); 
+    width: 40px;
+    height: 40px;
+    background: var(--main-color);
+    color: var(--white);
+    z-index: 1;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+#clientReview .reviewslider .slide{
+    width: 100%;
+    margin: 0 12px;
+    padding: 54px 58px 54px;
+    border-radius: 30px;
+}
+#clientReview .reviewslider .slide.slick-center{
+    background-color: #F4EFEF;
+}
+#clientReview .reviewslider .slide .titlep{
+    margin: 20px 0;
+}
+#clientReview .reviewslider .slide .icon{
+  margin: 20px 0 30px;
+  color: #F9BD2C;
+}
+#clientReview .reviewslider .marketor img{
+    width: 47px;
+    height: 47px;
+     margin-right: 20px;
+  }
+  #clientReview .reviewslider .marketor h3{
+    font-size:20px;
+    color:var(--black);
+    font-weight: 600;
+  }
+  #clientReview .reviewslider .marketor p{
+    font-size:16px;
+    color: rgba(115, 115, 115, 1);
+  }
+
+
+
+/* ========================CLIENT REVIEW CSS END================ */
+/* ========================FORM CSS START================== */
+#form{
+    margin-top: 227px;
+    background-color:#F3F3F3;
+}
+#form .container{
+   padding: 173px 0 127px;
+}
+#form .container .titlep{
+    max-width: 500px;
+ }
+ #form .container .middle{
+    margin:21px 0 11px ;
+ }
+ #form .container form{
+   background-color: var(--white);
+   padding: 38px 43px 84px;
+   border-radius: 20px;
+ }
+ #form .container form h3{
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 30px;
+}
+#form .container form button{
+   width: 450px;
+   background-color:var(--main-color);
+   padding: 19px 0 19px;
+   border: 0;
+   border-radius: 10px;
+   color: white;
+   font-family: var(--main-font);
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 26px;
+  }
+/* ========================FORM CSS END================== */
+/* ========================FOOTER CSS START============== */
+footer{
+   margin-top: 150px;
+}
+footer .container{
+   padding-bottom: 50px;
+   border-bottom: 2px solid #E8E8E8;
+ }
+footer .titlep{
+    margin-top: 30px;
+    max-width: 340px;
+}
+footer h3{
+    font-weight: 600;
+    font-size: 20px;
+    color:var(--black);
+    margin-bottom: 40px;
+}
+footer li a{
+    font-family: var(--main-font);
+    font-size:16px;
+    color: rgba(115, 115, 115, 1);
+    line-height: 26px;
+}
+footer .credit{
+    text-align: center;
+    color: #D0D0D0;
+}
+
+
+/* ========================FOOTER CSS END============== */
